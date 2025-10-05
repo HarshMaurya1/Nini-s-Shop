@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylecss/about.css">
+  <script src=""></script>
+  <title>NINI'S SHOP - About</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">NINI'S SHOP</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- Hero -->
+  <section class="hero">
+    <h1>The Classy <span> Fashion Clothes </span> for a <span> Worldwide Youth</span></h1>
+    <p>A clothing website's "About Us" page should tell your unique brand story, highlighting your mission, values, and the journey from problem to solution</p>
+    <button>Learn More →</button>
+  </section>
+
+  <hr>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <h3>Explore Business to Achieve More</h3>
+      <p>Discover how we help brands grow faster.</p>
+      <a href="home.html" style="color:#fff;">Explore Now →</a>
+    </div>
+    <div class="info-card">
+      <h3>Ready to Make an Impact?</h3>
+      <p>Create something amazing with us.</p>
+      <a href="contact.html" style="color:#fff;">Get Started →</a>
+    </div>
+    <div class="info-card light">
+      <img src="/image/aboutimage01.png" alt="office 1">
+      <img src="/image/aboutimage02.png" alt="office 2 ">
+      <img src="/image/aboutimage03.png" alt="office 3">
+      <p>"Their expertise helped us achieve real growth. Highly recommended!"</p>
+      <p>- Echo Agency, Alexander Ronald</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <img src="/image/team01.png" alt="Business">
+    <div>
+      <h2>Innovative Digital Solutions to Accelerate Your Online Business Growth</h2>
+      <p>We are an agency that helps brands grow through innovative solutions and effective marketing strategies.</p>
+      <div class="stats">
+        <div>2.3K+ <br> Momentum Collective</div>
+        <div>20 <br> Years of Experience</div>
+        <div>1.9K <br> Customers Worldwide</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agencies Section -->
+  <section class="agencies">
+    <h2>All Agencies that Have Consulted</h2>
+    <div class="agency-grid">
+      <div class="agency-card light">
+        <img src="/image/client01.png" alt="Data Report">
+        <h4>Client Data Report</h4>
+        <p>Data from 2023–2025</p>
+      </div>
+      <div class="agency-card light">
+        <img src="/image/ceo01.png" height="75%" alt="Agency">
+        <h4>Visionary Hive</h4>
+        <p>Innovative marketing & branding agency.</p>
+      </div>
+      <div class="agency-card">
+        <img src="/image/team04.png" height="84%" alt="">
+        <h4>McCann Worldgroup</h4>
+        <p>Join from 23 February, 2025</p>
+        <p>We provide strategic and innovative business management to enhance efficiency, branding, and growth.</p>
+      </div>
+    </div>
+  </section>
+<!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- About Owner -->
+      <div class="footer-box">
+        <h3>About Owner</h3>
+        <p><strong>Owner:</strong> Rajesh Kumar</p>
+        <p><strong>Email:</strong> rajesh@example.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a><br>
+        <a href="#">About Us</a><br>
+        <a href="#">Services</a><br>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-box">
+        <h3>Contact Info</h3>
+        <p>📍 New Delhi, India</p>
+        <p>📧 support@example.com</p>
+        <p>📞 +91 98765 00000</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111543.png" alt="Pinterest"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 All Rights Reserved | Designed by <span>Harsh Malhotra</span>
+    </div>
+  </footer>
+  <!-- Scripts for animations -->
+  <script>
+    // Page load animation
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    // Scroll animation for elements
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animation only once
+        }
+      });
+    }, { threshold: 0.1 });
+
+    // Add animation class to all target elements
+    document.querySelectorAll('.footer-bottom, .footer-container, .footer-box, .agencies, .agency-grid, .about, .info-section, .info-card, .hero, footer, .header').forEach(el => {
+      el.classList.add('animate-on-scroll');
+      observer.observe(el);
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -94,7 +94,7 @@ body {
 #bannershop{
 
      background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), 
-                url(../shopbanner.png);
+                url('https://harshmaurya1.github.io/Nini-s-Shop/image/shopbanner.png');
     height: 450px;
     background-size: cover;
     background-position: center;

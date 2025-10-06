@@ -93,7 +93,7 @@
 
 #banner {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.0)), 
-                url(/image/bannercontact.png);
+                url(../bannercontact.png);
     height: 450px;
     background-size: cover;
     background-position: center;
